@@ -3,7 +3,7 @@ import { Auth } from "aws-amplify";
 import { Authenticator } from "aws-amplify-react";
 import styled from "@emotion/styled";
 
-//import awsExports from "./aws-exports";
+import awsExports from "./aws-exports";
 import Screens from "./components/Screens";
 
 const Title = styled("h1")`
@@ -74,7 +74,7 @@ function App() {
             checkLoggedIn();
           }
         }}
-        //amplifyConfig={awsExports}
+        amplifyConfig={awsExports}
         theme={theme}
       />
     </>
